@@ -1,38 +1,119 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 0px 18px 0px 18px;
+  box-shadow: 5px 5px 5px #aaaaaa;
+}
+
+.navbar h3 {
+  color: orange;
+}
+
+.navbar .list-menu {
+  display: flex;
+  list-style: none;
+}
+
+.navbar .list-menu li {
+  padding: 0px 36px 0px 36px;
+}
+
+.navbar .signup-button {
+  background-color: orange;
+  padding: 8px;
+  border-radius: 8px;
   color: white;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.hero {
+  margin-top: 10px;
+  display: flex;
+  height: 440px;
+  padding: 36px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero .image-banner img {
+  height: 100%;
+  border-radius: 20px;
+}
+
+.hero .spacer {
+  width: 72px;
+}
+
+.hero .detail {
+  width: 50%;
+}
+
+.hero .detail div {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.hero .order-button {
+  background-color: orange;
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  width: fit-content;
+}
+
+.food-lists {
+  background-color: #ddd;
+}
+
+.food-lists .title {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  padding: 18px 0px 18px 0px;
+}
+
+.food-lists .food-list {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.food-lists .container {
+  background-color: white;
+  margin: 18px;
+  padding: 18px;
+  border-radius: 10px;
+}
+
+.food-lists .container img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* intro food list */
+.intro-food-lists .title {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  padding: 18px 0px 18px 0px;
+}
+
+.intro-food-lists .food-list {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.intro-food-lists .container {
+  background-color: #ddd;
+  margin: 18px;
+  padding: 18px;
+  border-radius: 10px;
+}
+
+.intro-food-lists .container img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
